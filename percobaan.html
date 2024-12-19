@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marquee</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      overflow: hidden;
+    }
+
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .marquee {
+      display: inline-block;
+      font-size: 80px;
+      font-weight: bold;
+      color: white;
+      animation: scroll 10s linear infinite;
+      white-space: nowrap;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee-container">
+    <div class="marquee">SEDANG TURU</div>
+  </div>
+</body>
+</html>
